@@ -1,0 +1,1 @@
+angular.module('SampleApp.Home', ['SampleApp.Common']);

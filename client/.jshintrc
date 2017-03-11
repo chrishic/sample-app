@@ -1,0 +1,32 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "immed": true,
+    "loopfunc": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonew": true,
+    "onecase": true,
+    "trailing": true,
+    "white": false,
+    "strict": false,
+    "sub": true,
+    "node": false,
+    "undef": true,
+    "unused": true,
+    "predef" : [
+        // *************
+        //  Angular
+        // *************
+        "angular",
+        "head",
+
+        // *************
+        //  Development
+        // *************
+        "console"
+    ]
+}

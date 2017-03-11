@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sample App Client</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet prefetch" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+
+        <!-- AngularJS-Toastr -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css">
+    </head>
+    <body ng-controller="MainCtrl as main">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+              <span class="navbar-brand">Sample App Client</span>
+            </div>
+
+            <div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right nav-tabs">
+                  <li><a href="#">Home</a></li>
+                  <li class="navbar-text">Current Env: <b>{{main.env}}</b></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+
+        <div ng-view=""></div>
+
+        <div class="modal"></div>
+
+        <toaster-container></toaster-container>
+
+        <script src="vendor/head.load.min.js"></script>
+        <script src="assets/js/boot.js"></script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <div style="height:35px;"></div>
+      </div>
+      <h2>Service Status</h2>
+      <div class="row">
+        Endpoint: {{home.endpoint}}
+      </div>
+      <div class="row">
+        <div style="height:25px;"></div>
+      </div>
+      <div class="row">
+        <pre>{{home.status|json}}</pre>
+      </div>
+    </div>
+  </div>
+</div>
