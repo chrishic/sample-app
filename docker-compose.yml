@@ -1,0 +1,20 @@
+version: "2"
+
+services:
+    api-service:
+        build: api-service/
+        environment:
+            APP_ENV: development
+        volumes:
+            - ./shared:/var/www/sample-app-service/shared
+        ports:
+            - "8080:80"
+
+    client:
+        build: client/
+        environment:
+            APP_ENV: development
+        ports:
+            - "8000:80"
+        links:
+            - api-service
