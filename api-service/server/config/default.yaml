@@ -1,0 +1,4 @@
+app:
+    hostname: localhost
+    port: 80
+    debug_verbose: false
